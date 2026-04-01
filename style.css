@@ -26,7 +26,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   text-align: left;
 }
 #takeaway .textbox h1 {
@@ -36,7 +36,7 @@ section {
 #takeaway .textbox h1 span {
   color: #08cbc5;
 }
-#takeaway .textbox h2#loremm {
+#takeaway .textbox p {
   margin: 30px 0;
   font-size: 20px;
   color: #888888;
@@ -60,9 +60,39 @@ section {
 }
 #takeaway .imgbox {
   margin: 0 0 0 40px;
-  height: 100vh;
+  height: auto;
   align-content: center;
   justify-content: center;
+}
+@media (max-width: 576px) {
+  #takeaway {
+    margin-top: 10px;
+  }
+  #takeaway .textbox {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #takeaway .imgbox {
+    margin-top: 30px;
+    height: 300px;
+  }
+}
+@media (max-width: 992px) {
+  #takeaway .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #takeaway .col-md-6 .textbox {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #takeaway .col-md-6 .imgbox {
+    margin-top: 30px;
+    height: auto;
+  }
 }
 
 #fresh {
