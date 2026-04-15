@@ -184,6 +184,7 @@ section {
 }
 @media (max-width: 992px) {
   #howitworks .row {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -193,12 +194,13 @@ section {
     width: 100%;
   }
   #howitworks .row .col-md-4 .imgbox img {
+    margin-top: 80px;
     max-width: 300px;
     height: auto;
   }
   #howitworks .row .col-md-4 .textbox {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 20px auto;
   }
 }
 @media (max-width: 576px) {
@@ -214,10 +216,7 @@ section {
   }
   #howitworks .row .col-md-4 .textbox {
     max-width: 300px;
-    margin: 0 auto;
-  }
-  #howitworks .row .col-md-4 .imgbox {
-    margin: 80px 0 20px 0;
+    margin: 20px auto 80px auto;
   }
 }
 
