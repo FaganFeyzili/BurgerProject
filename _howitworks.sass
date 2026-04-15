@@ -14,7 +14,36 @@
         h2
             font-size: 20px
             color: #88888888
-        
+    
+    @media (max-width: 992px)
+        .row 
+            display: flex 
+            flex-direction: column 
+            text-align: center 
+            align-items: center 
+            .col-md-4 
+                width: 100%
+                .imgbox img 
+                    max-width: 300px
+                    height: auto 
+                .textbox 
+                    max-width: 500px 
+                    margin: 0 auto
+
+    @media (max-width: 576px)
+        .row 
+            margin-top: 40px
+            display: flex 
+            flex-direction: column 
+            text-align: center 
+            align-content: center 
+            .col-md-4 
+                width: 100%
+                .textbox 
+                    max-width: 300px 
+                    margin: 0 auto 
+                .imgbox 
+                    margin: 80px 0 20px 0
 
 
 
