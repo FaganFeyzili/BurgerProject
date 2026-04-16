@@ -398,9 +398,44 @@ section {
   margin: 0 0 30px 0;
 }
 #order .col-md-6 .textbox .btn {
+  max-width: 200px;
   color: white;
   background-color: #08cbc5;
   background-image: url(images/assets/img34.svg);
+}
+@media (max-width: 922px) {
+  #order .row .col-md-6 {
+    flex-direction: column;
+    width: 100%;
+  }
+  #order .row .col-md-6 .imgbox {
+    margin-bottom: 20px;
+  }
+  #order .row .col-md-6 .textbox {
+    width: 50%;
+    text-align: center;
+  }
+  #order .row .col-md-6 .textbox .btn {
+    padding: 10px;
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  #order .row .col-md-6 {
+    flex-direction: column;
+    width: 100%;
+  }
+  #order .row .col-md-6 .imgbox {
+    margin-bottom: 20px;
+  }
+  #order .row .col-md-6 .textbox {
+    width: 90%;
+    text-align: center;
+  }
+  #order .row .col-md-6 .textbox .btn {
+    padding: 20px;
+    width: 100%;
+  }
 }
 
 #call .textbox h1 {
