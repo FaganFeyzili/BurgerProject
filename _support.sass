@@ -1,22 +1,43 @@
 #support
-    .box
+    padding: 60px 0
+    .imgbox
+        width: 100%
         display: flex
-        align-items: center
         justify-content: center
-        padding: 0 40px 
-        height: 100%
-        background-color: rgba(53, 185, 190)
-        background-image: url(images/assets/img32.svg)
-        background-size: 200%
+        align-items: center
+        overflow: hidden   
+        img
+            width: 100%
+            max-width: 450px
+            height: auto
+            display: block
+            border: 6px solid #fff
+            box-sizing: border-box
+    .textbox
         h1
-            color: #ffff
+            font-size: 40px
             font-weight: 700
-            font-size: 65px 
-            margin: 0 0 20px 0
             span
-                color: #0e706b
+                color: #08cbc5
         .btn
-            color: rgba(53, 185, 190)
-            background-color: #ffff
-            border: 1px solid #064a47
-
+            margin-top: 20px
+            display: inline-block
+    @media (max-width: 992px)
+            .row
+                display: flex
+                flex-direction: column   
+            .img
+            .text
+                width: 100%
+                max-width: 100%
+                flex: 0 0 100%
+            .imgbox
+                margin-bottom: 20px
+                img
+                    width: 100%
+                    max-width: 100%
+                    border: 3px solid #ffff
+            .textbox
+                text-align: center
+                h1
+                    font-size: 28px
