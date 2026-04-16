@@ -1,12 +1,22 @@
 #support
-    .box
+    .imgbox
+        height: 480px
         width: 100%
+
+        img
+            width: 100%
+            height: 480px
+            object-fit: cover
+            display: block
+    .box
+        width: 100%            
         .textbox
             display: flex
             flex-direction: column
             justify-content: center
             align-items: flex-start
             padding: 0 40px
+            height: 480px
             width: 100%
             background-color: #08cbc5
             background-image: url(images/assets/img32.svg)
@@ -21,45 +31,49 @@
             .btn
                 color: #08cbc5
                 background-color: #fff
-                border: 1px solid #064a47
     @media (max-width: 992px)
-            .container
-                display: flex
-                width: 100%
-                max-width: 100%
-                .row
-                    .col-md-6
-                        width: 100%
-                        display: flex
-                        .imgbox
-                            display: flex
-                            height: 250px
-                            width: 100%
-                            img
-                                height: 380px
-                                object-fit: cover
-                                display: flex
-                        .box
-                            display: flex
-                            width: 100%
-                            height: 100%
-                            .textbox 
-                                padding: 60px 15px  
-                                margin-top: 15px
-                                h1 
-                                    font-size: 40px
-                                    width: 50%
-    @media (max-width: 576px)
-            .col-md-6
-                width: 100%
-                padding: 0 20px
-            .imgbox
-                height: 400px
-                width: 100%
-                img
+        .container
+            display: flex
+            width: 100%
+            max-width: 100%
+            .row
+                .col-md-6
                     width: 100%
-                    object-fit: cover
-                    display: block
-            .textbox 
-                height: 400px
-                padding: 25px 20px
+                    display: flex
+                    .imgbox
+                        display: flex
+                        height: 250px
+                        width: 100%
+                        img
+                            height: 100%
+                            object-fit: cover
+                            display: flex
+                    .box
+                        display: flex
+                        width: 100%
+                        height: 100%
+                        .textbox 
+                            max-height: 260px
+                            padding: 60px 15px  
+                            margin-top: 15px
+                            h1 
+                                font-size: 40px
+                                width: 50%
+    @media (max-width: 576px)
+        .container
+            .row
+                .col-md-6
+                    width: 100%
+                    padding: 0 20px
+                    .box
+                        .textbox
+                            height: 400px
+                            padding: 25px 20px
+                            h1
+                                font-size: 30px
+                                width: 100%
+
+                            .btn
+                                min-width: 150px
+                                padding: 10px
+                    
