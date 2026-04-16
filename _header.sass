@@ -3,14 +3,66 @@ header
     .menu
         display: flex
         justify-content: space-between
+        align-items: center
+        position: relative
         img
-            width: 50px   
+            width: 50px
+
+        .hamburger
+            display: none
+            font-size: 22px
+            cursor: pointer
+        .cart 
+            display: none
         nav
-            align-content: center
+            display: flex
+            align-items: center
             a
-                color: #000000
+                color: #000
                 font-size: 22px
                 margin-left: 10px
-                
                 span
                     color: #08cbc5
+
+        @media (max-width: 992px)
+            .hamburger
+                background-color: rgba(233, 237, 240)
+                padding: 15px
+                border-radius: 5px
+                display: block
+                i 
+                    font-size: 20px
+
+            nav
+                position: absolute
+                top: 80px
+                left: 0
+                width: 100%
+                background: #fff
+                display: none
+                flex-direction: column
+                align-items: center
+                padding: 20px 0
+                a
+                    font-size: 16px
+                    margin: 10px 0
+            .cart 
+                display: none
+        @media (max-width: 576px)
+            .icons
+                .cart 
+                    background-color: rgba(53, 185, 190)
+                    padding: 15px
+                    border-radius: 5px
+                    display: block
+                    margin-right: 10px
+                .hamburger 
+                    background-color: rgba(233, 237, 240)
+                    padding: 15px
+                    border-radius: 5px
+                    i 
+                        font-size: 15px
+            img
+                height: 40px
+            nav
+                top: 70px
